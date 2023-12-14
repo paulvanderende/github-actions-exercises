@@ -8,7 +8,7 @@ jobs:
         steps:
         - uses: actions/checkout@v3
 
-        - run: ${{ toJson(github.event)}}
+        - run: echo "${{ toJson(github.event)}}"
 
         - name: Create comment on issue
           env:
